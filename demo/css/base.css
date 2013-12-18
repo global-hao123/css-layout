@@ -478,6 +478,8 @@ input:focus {
 /*
 from: http://paulirish.com/2009/bulletproof-font-face-implementation-syntax
 */
+
+/*
 @font-face {
     font-family: "i";
     src: url("../font/i.eot?m");
@@ -487,11 +489,14 @@ from: http://paulirish.com/2009/bulletproof-font-face-implementation-syntax
     url('../font/i.ttf?m') format('truetype'),
     url("../font/i.svg#i?m") format("svg");
 }
+*/
 
 /*
 fix: Android 2.2-2.3 (which supports @font-face, but not the local() definition)
 ref: https://code.google.com/p/android/issues/detail?id=10609
 */
+
+/*
 @media screen and (max-device-width: 480px) {
   @font-face {
     font-family: "i";
@@ -503,6 +508,7 @@ ref: https://code.google.com/p/android/issues/detail?id=10609
     url("../font/i.svg#i?m") format("svg"); 
   }
 }
+*/
 
 i,
 .i,
