@@ -210,6 +210,8 @@ li = (wrap + space)/n - space = (960 + 10)/10 - 10 = 97 - 10 = 87
 html{
     
     /*fix ie6 media query*/
+
+    /*
     *zoom: expression(function(el){
         var body = document.body;
         window.attachEvent("onresize", function() {
@@ -219,6 +221,7 @@ html{
         });
         el.style.zoom = "1";
     }(this));
+    */
 }
 
 /*.l-g1, .l-g2, .l-g3, .l-g4, .l-g5, .l-g6, .l-g7, .l-g8, .l-g9, .l-g10, .l-g11, .l-g12{
