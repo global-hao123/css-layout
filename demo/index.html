@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>title</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/layout.css" />
+<style>
+html{ background: #eceef1;}
+body{ font: 12px/20px "Helvetica Neue",Helvetica,Arial,Sans-Serif;}
+h2{ color: #55606e; font: bold 18px/40px serif;}
+h4{ color: #2e3846; margin: 0; padding: 0; line-height: 2; font: bold 16px/40px "Helvetica Neue",Helvetica,Arial,Sans-serif}
+
+.l-wrap{ /*width: 90%;*/}
+.l-wrap-code{ background: #fff; border: 1px solid #ddd; border-left: none; border-right: none; padding: 10px;}
+pre{ color: #a2a9b4; font: normal 13px/1.5 Helvetica, arial, freesans, clean, sans-serif;}
+code{ color: #08c; display: inline-block; *display: inline; zoom: 1;
+
+    /*min-width: 50px; width: auto !important; width: 50px;*/
+    
+    
+    font: bold 100% consolas,monospace,verdana,Helvetica,Tahoma,Arial,"微软雅黑";
+}
+
+/* mods */
+.usrbar{ background: #eee;}
+.usrbar_wrap{ background: #666;}
+
+.nav{ background: #ddd;}
+.nav_logo{}
+
+.search{ background: #aaa;}
+
+.hotsite{ border: 1px solid #999; height: 100px;}
+.sortsite{ background: #eee;}
+.sidesite{ background: #bbb;}
+.news{ background: #888; border: 5px solid #333;}
+
+.toolsite{ background: #777;}
+
+.footer{ background: #999;}
+
+
+.mod{background: #7b8590; text-align: center; color: #eceef1; font: bold 14px/2 Helvetica,Arial,Sans-Serif; }
+
+.mod1{background: #dd4a38;}
+.mod2{background: #27313d;}
+.mod3{background: orange;}
+.mod4{background: yellow;}
+.mod5{background: lime;}
+.mod6{background: green;}
+.mod7{background: aqua;}
+.mod8{background: blue;}
+.mod9{background: purple;}
+.mod10{background: magenta;}
+
+.mod-w100{ width: 100px; background: #dd4a38;}
+.mod-h100{ line-height: 100px;}
+.mod-b5{ border: 5px solid #27313d;}
+
+/* custom */
+/*.l-l{ width: 25%;}*/
+
+.rtl{direction:rtl;}
+.rtl .unit{float:right;}
+.rtl .lastUnit{_right:-3px;_margin-left:-3px;_margin-right:0; _left:0;}
+/*
+@media (min-width: 1100px) {
+    .l-wrap{ background: #f00;}
+}*/
+
+
+
+.l-g{ background: #fff;}
+
+</style>
+</head>
+<body>
+
+<h2 class="l-wrap">Update: </h2>
+
+<div class="l-wrap-code">
+<pre class="l-wrap">
+<code>[2012-09-19]</code>
+1. Supports & Pass test: IE6~10 Firefox Chrome Opera Safari
+2. New: repalce the last one to <code>.l-g0</code> to Fix %-layout
+3. Add: new type of 12-Col-layout 1130/950px (try resize browse)
+4. Add: float-layout
+</pre>
+</div>
+
+<h2 class="l-wrap">I. Float</h2>
+
+<div class="l-wrap-code">
+<pre class="l-wrap">
+<code>.l-fl</code> float left
+<code>.l-fr</code> float right
+<code>.l-ff</code> auto-fill width (behind in a floating el)
+<code>.cf</code> clear fix
+</pre>
+</div>
+
+<div class="l-wrap">
+    <h4>1. left.width = 100px</h4>
+    <div class="l-fl"><div class="mod mod-w100">l-fl</div></div>
+    <div class="l-ff"><div class="mod">l-ff</div></div>
+</div>
+
+<div class="l-wrap">
+    <h4>2. right.width = 100px</h4>
+    <div class="l-fr"><div class="mod mod-w100">l-fr</div></div>
+    <div class="l-ff"><div class="mod">l-ff</div></div>
+</div>
+
+<div class="l-wrap">
+    <h4>3. left.width = 100px & right.width = 100px</h4>
+    <div class="l-fl"><div class="mod mod-w100">l-fl</div></div>
+    <div class="l-fr"><div class="mod mod-w100">l-fr</div></div>
+    <div class="l-ff"><div class="mod">l-ff</div></div>
+</div>
+
+<h2 class="l-wrap">II. Space</h2>
+
+<div class="l-wrap-code">
+<pre class="l-wrap">
+/*
+ * prefix: "s-"
+ * p,m = padding,margin
+ * a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
+ * s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
+ */
+<code>.s-ptm</code> padding top medium
+<code>.s-mvn</code> margin vertical none
+<code>...</code>
+</pre>
+</div>
+
+
+<div class="l-wrap">
+    <h4>1. border</h4>
+    <div class="l-g"><div class="mod mod-b5">mod-b5</div></div>
+</div>
+
+<div class="l-wrap">
+    <h4>2. padding-top = 10px</h4>
+    <div class="l-g"><div class="mod s-ptm">s-ptm</div></div>
+</div>
+
+<div class="l-wrap">
+    <h4>3. margin-all = 5px</h4>
+    <div class="l-g"><div class="mod s-mas">s-mas</div></div>
+</div>
+
+<h2 class="l-wrap">III. Grid</h2>
+
+<div class="l-wrap-code">
+<pre class="l-wrap">
+<code>.l-g</code> grid wrap
+
+/*
+ * Grid
+ * (column + space)*n - space = wrap
+ * column = (wrap + space)/n - space = (960 + 10)/10 - 10 = 97 - 10 = 87
+ * (950+10)/12 - 10
+ */
+<code>.l-g2</code> 2 of 12-column
+<code>.l-g_2</code> offset: 2
+ 
+/*
+ * Percentage of self-adaption
+ * 1-1 ~ 5-5
+ */
+<code>.l-g1-4</code> 1/4
+<code>.l-g0</code> the last column
+</pre>
+</div>
+
+<div class="l-wrap">
+    
+    <h4>1. 1/3 + 1/3 + auto(1/3)</h4>
+    <div class="l-g cf">
+        <div class="l-g1-3"><div class="mod mod1">l-g1-3</div></div>
+        <div class="l-g1-3"><div class="mod">l-g1-3</div></div>
+        <div class="l-g0"><div class="mod mod1">l-g0</div></div>
+    </div>
+    
+    <h4>2. 1/5 + 1/4 + 1/3 + auto</h4>
+    <div class="l-g cf">
+        <div class="l-g1-5"><div class="mod mod1">l-g1-5</div></div>
+        <div class="l-g1-4"><div class="mod">l-g1-4</div></div>
+        <div class="l-g1-3"><div class="mod mod1">l-g1-3</div></div>
+        <div class="l-g0"><div class="mod">l-g0</div></div>
+    </div>
+    
+    <h4>3. 1/4 + auto(1/4 + 1/4 + 1/4 +auto)</h4>
+    <div class="l-g cf">
+        <div class="l-g1-4"><div class="mod mod2">l-g1-4</div></div>
+        <div class="l-g0">
+            <div class="l-g1-4"><div class="mod">l-g1-4</div></div>
+            <div class="l-g1-4"><div class="mod mod1">l-g1-4</div></div>
+            <div class="l-g1-4"><div class="mod">l-g1-4</div></div>
+            <div class="l-g0"><div class="mod mod1">l-g1-4</div></div>
+        </div>
+    </div>
+</div>
+
+<div class="l-wrap">
+    <h4>4. 12 column</h4>
+</div>
+
+<div class="l-wrap">
+    <div class="l-g">
+        <div class="l-g1"><div class="mod">l-g1</div></div>
+        <div class="l-g1"><div class="mod">l-g1</div></div>
+        <div class="l-g1"><div class="mod">l-g1</div></div>
+        <div class="l-g1"><div class="mod">l-g1</div></div>
+        <div class="l-g1"><div class="mod">l-g1</div></div>
+        <div class="l-g1"><div class="mod">l-g1</div></div>
+        <div class="l-g1"><div class="mod">l-g1</div></div>
+        <div class="l-g1"><div class="mod">l-g1</div></div>
+        <div class="l-g1"><div class="mod">l-g1</div></div>
+        <div class="l-g1"><div class="mod">l-g1</div></div>
+        <div class="l-g1"><div class="mod">l-g1</div></div>
+        <div class="l-g1"><div class="mod">l-g1</div></div>
+    </div>
+    <div class="l-g">
+        <div class="l-g3"><div class="mod mod1">l-g3</div></div>
+        <div class="l-g9"><div class="mod">l-g9</div></div>
+    </div>
+    <div class="l-g">
+        <div class="l-g11 l-g_1"><div class="mod mod1">l-g11 + l-g_1</div></div>
+    </div>
+    <div class="l-g">
+        <div class="l-g2 l-g_1"><div class="mod mod1">l-g2 + l-g_1</div></div>
+        <div class="l-g2 l-g_3"><div class="mod">l-g2 + l-g_3</div></div>
+        <div class="l-g3 l-g_1"><div class="mod mod1">l-g3 + l-g_1</div></div>
+    </div>
+
+    <div class="l-g">
+        <div class="l-g3 l-g_2"><div class="mod mod1">l-g3 + l-g_2</div></div>
+        <div class="l-g2 l-g_5"><div class="mod">l-g2 + l-g_5</div></div>
+    </div>
+</div>
+
+<h2 class="l-wrap">IV. Self-adaption</h2>
+
+<div class="l-wrap-code">
+<pre class="l-wrap">
+/*
+resize browse(<code>1100</code>) ==> <code>950</code> & <code>1130</code>
+ */
+</pre>
+</div>
+
+
+<h2 class="l-wrap">V. Layout demo</h2>
+
+<div class="mod2">
+    <div class="l-wrap">
+        <div class="l-fl"><div class="mod mod-w100">LOGO</div></div>
+        <div class="l-fr"><div class="mod mod-w100">LOGIN</div></div>
+        <div class="l-ff"><div class="mod">TOP</div></div>
+    </div>
+</div>
+
+<div class="l-wrap"><div class="header s-mvl s-pal mod mod1">header</div></div>
+
+<div class="l-wrap">
+    <div class="l-g">
+        <div class="l-g3-4">
+            <div class="l-g1-4"><div class="mod-h100 mod mod2 s-mrl s-mbl">mod</div></div>
+            <div class="l-g1-4"><div class="mod-h100 mod mod2 s-mrl s-mbl">mod</div></div>
+            <div class="l-g1-4"><div class="mod-h100 mod mod2 s-mrl s-mbl">mod</div></div>
+            <div class="l-g0"><div class="mod-h100 mod mod2 s-mrl s-mbl">mod</div></div>
+            <div class="l-g1-4"><div class="mod-h100 mod mod2 s-mrl s-mbl">mod</div></div>
+            <div class="l-g1-4"><div class="mod-h100 mod mod2 s-mrl s-mbl">mod</div></div>
+            <div class="l-g1-4"><div class="mod-h100 mod mod2 s-mrl s-mbl">mod</div></div>
+            <div class="l-g0"><div class="mod-h100 mod mod2 s-mrl s-mbl">mod</div></div>
+            <div class="l-g1-4"><div class="mod-h100 mod mod2 s-mrl s-mbl">mod</div></div>
+            <div class="l-g1-4"><div class="mod-h100 mod mod2 s-mrl s-mbl">mod</div></div>
+            <div class="l-g1-4"><div class="mod-h100 mod mod2 s-mrl s-mbl">mod</div></div>
+            <div class="l-g0"><div class="mod-h100 mod mod2 s-mrl s-mbl">mod</div></div>
+        </div>
+        <div class="l-g0">
+            <div class="mod-h100 mod s-mbl">mod</div>
+            <div class="mod-h100 mod s-mbl">mod</div>
+            <div class="mod-h100 mod s-mbl">mod</div>
+        </div>
+    </div>
+</div>
+
+<div class="l-wrap"><div class="footer mod mod2 s-pal">footer</div></div>
+</body>
+<script>
+/*
+
+3 | 9()
+
+960
+
+240
+720/4 
+180 
+
+2 2 2 2 3
+
+3:3:3:4
+---------
+12
+
+3 3 3 3
+
+24
+
+5 5 5 9
+
+36
+
+8 8 8 12
+
+
+....
+156
+
+36 36 36 48
+*/
+
+/*(function() {
+    for(var i = 1; i < 100; i++) {
+        for(var n = 1; n < 100; n++) {
+            if(8*i + 3*i === 12*n) return alert(12*n);    
+        }
+    }
+})();*/
+</script>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>title</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/layout.css" />
+<style>
+
+/*============ common ============*/
+.l-wrap{ width: 960px;}
+.l-g{ width: auto;}
+html{ background: #EDF0EF;}
+body{ font: normal 14px/1.5 Arial;}
+a{ text-decoration: none; color: #333;}
+a:hover{ text-decoration: underline;}
+
+/*=========== custom ============*/
+
+.l-l{ width: 25%;}
+.rtl{direction:rtl;}
+.rtl .unit{float:right;}
+.rtl .lastUnit{_right:-3px;_margin-left:-3px;_margin-right:0; _left:0;}
+
+/*=========== mods ============*/
+/* usrbar */
+.usrbar{ height: 50px;}
+    .usrbar_wrap{ background: #00AB77; border-bottom: 1px solid #fff;}
+
+/*search*/
+.search{ height: 98px;}
+
+/*hotsite*/
+.hotsite{ height: 190px; background: #fff; text-align: center; overflow: hidden;
+}
+    .hotsite_wrap{ border: 1px solid #CACCCC;}
+    .hotsite-custom{ border-top: 1px solid #F7F7F7; background: #FBFDFC;}
+        .hotsite-custom_bar{ text-align: center; color: #23C098; line-height: 25px;}
+
+    .hotsite span{ display: inline-block; width: 130px; overflow: hidden; background: #F9FAFA; text-align: center; vertical-align:top; margin: 10px 3px;
+    }
+    .hotsite a{}
+    .hotsite i{ width: 48px; height: 48px; display: block; background: #aaa; margin: 5px auto;}
+
+/*hotsite*/
+.sortsite{ /*white-space: nowrap;*/ overflow: hidden;
+    border: 1px solid #E3E5E6; background: #fff;
+    text-indent: 20px; line-height: 30px; position: relative; _width: 89%;
+}
+    .sortsite dt{ height: 30px; border-bottom: 1px solid #EDEFF0; background: #F9FAFA; color: #23C098; font-size: 16px; overflow: hidden; position: relative; _position: static;}
+    .sortsite dt a{ color: #23C098; font-size: 16px;}
+    /*.sortsite dt i{ position: absolute; right: 0px; top: 0;}*/
+    .sortsite dd{ margin-right: 20px; overflow: hidden;}
+    .sortsite_more{ font-family: Verdana; text-align: right; text-indent: 0; background: #F9FAFA; position: absolute; right: 0px; top: 0; float: right;}
+
+/*side*/
+.side{ border: 1px solid #fff;}
+
+.mod-xx{ background: #fff; line-height: 100px; text-align: center;}
+
+
+.nav{ background: #ddd;}
+.nav_logo{}
+
+.search{ background: #aaa;}
+
+/*.hotsite{ border: 1px solid #999; height: 100px;}*/
+/*
+.sortsite{ background: #eee;}
+.sidesite{ background: #bbb;}
+.news{ background: #888; border: 5px solid #333;}*/
+
+.toolsite{ background: #777;}
+
+.footer{ background: #999;}
+</style>
+</head>
+<body>  
+<!-- <iframe class="grayscale" src="http://th.hao123.com/" frameborder="0" width="100%" height="1000px"></iframe> -->
+
+<div class="usrbar_wrap">
+    <div class="usrbar l-wrap"><img src="http://placehold.it/120x50&text=hao123" alt=""></div>
+</div>
+
+<div class="l-wrap"><div class="s-mvl search"><img src="http://placehold.it/120x98&text=search" alt=""></div></div>
+
+<div class="l-wrap"><div class="s-mtl hotsite_wrap">
+    
+    <div class="hotsite">
+        <span><a href="#"><i></i>longtext</a></span><span><a href="#"><i></i>verylongtext</a></span><span><a href="#"><i></i>veryverylongtext</a></span><span><a href="#"><i></i>veryveryverylongtext</a></span><span><a href="#"><i></i>text</a></span><span><a href="#"><i></i>veryveryveryverylongtext</a></span><span><a href="#"><i></i>text</a></span><span><a href="#"><i></i>text</a></span><span><a href="#"><i></i>text</a></span><span><a href="#"><i></i>text</a></span><span><a href="#"><i></i>text</a></span><span><a href="#"><i></i>text</a></span><span><a href="#"><i></i>text</a></span><span><a href="#"><i></i>text</a></span><span><a href="#"><i></i>text</a></span><span><a href="#"><i></i>text</a></span>
+    </div>
+    <div class="hotsite-custom">
+        <div class="hotsite-custom_bar">add your common website</div>
+        <!-- <div class="hotsite-custom_list"></div> -->
+    </div>
+</div>
+</div>
+
+<div class="l-wrap">
+    <div class="l-g">
+        <div class="l-g3-4">
+            <div class="l-g1-4">
+                <dl class="s-mrl s-mtl sortsite"><dt class="s-prl">
+                    <a href=""><span class="s-prl s-plm sortsite_more"><i class="i-chevron-right">&#xf000;&nbsp;</i></span>veryveryveryveryverylongdt</a>
+                </dt><dd><a href="#">veryveryveryveryverylongdd</a></dd><dd><a href="#">verylongdd</a></dd><dd><a href="#">veryverylongdd</a></dd><dd><a href="#">dd</a></dd><dd><a href="#">dd</a></dd></dl>
+            </div>
+            <div class="l-g1-4">
+                <dl class="s-mrl s-mtl sortsite"><dt><span class="fr s-prl s-plm sortsite_more"><a href="#"><i class="i-chevron-right"></i></a></span>veryveryveryveryverylongdt</dt><dd><a href="#">veryveryveryveryverylongdd</a></dd><dd><a href="#">verylongdd</a></dd><dd><a href="#">veryverylongdd</a></dd><dd><a href="#">dd</a></dd><dd><a href="#">dd</a></dd></dl>
+            </div>
+            <div class="l-g1-4">
+                <dl class="s-mrl s-mtl sortsite"><dt><span class="fr s-prl s-plm sortsite_more"><a href="#"><i class="i-chevron-right"></i></a></span>veryveryveryveryverylongdt</dt><dd><a href="#">veryveryveryveryverylongdd</a></dd><dd><a href="#">verylongdd</a></dd><dd><a href="#">veryverylongdd</a></dd><dd><a href="#">dd</a></dd><dd><a href="#">dd</a></dd></dl>
+            </div>
+            <div class="l-g1-4">
+                <dl class="s-mrl s-mtl sortsite"><dt><span class="fr s-prl s-plm sortsite_more"><a href="#"><i class="i-chevron-right"></i></a></span>veryveryveryveryverylongdt</dt><dd><a href="#">veryveryveryveryverylongdd</a></dd><dd><a href="#">verylongdd</a></dd><dd><a href="#">veryverylongdd</a></dd><dd><a href="#">dd</a></dd><dd><a href="#">dd</a></dd></dl>
+            </div>
+            <div class="l-g1-4">
+                <dl class="s-mrl s-mtl sortsite"><dt><span class="fr s-prl s-plm sortsite_more"><a href="#"><i class="i-chevron-right"></i></a></span>veryveryveryveryverylongdt</dt><dd><a href="#">veryveryveryveryverylongdd</a></dd><dd><a href="#">verylongdd</a></dd><dd><a href="#">veryverylongdd</a></dd><dd><a href="#">dd</a></dd><dd><a href="#">dd</a></dd></dl>
+            </div>
+            <div class="l-g1-4">
+                <dl class="s-mrl s-mtl sortsite"><dt><span class="fr s-prl s-plm sortsite_more"><a href="#"><i class="i-chevron-right"></i></a></span>veryveryveryveryverylongdt</dt><dd><a href="#">veryveryveryveryverylongdd</a></dd><dd><a href="#">verylongdd</a></dd><dd><a href="#">veryverylongdd</a></dd><dd><a href="#">dd</a></dd><dd><a href="#">dd</a></dd></dl>
+            </div>
+            <div class="l-g1-4">
+                <dl class="s-mrl s-mtl sortsite"><dt><span class="fr s-prl s-plm sortsite_more"><a href="#"><i class="i-chevron-right"></i></a></span>veryveryveryveryverylongdt</dt><dd><a href="#">veryveryveryveryverylongdd</a></dd><dd><a href="#">verylongdd</a></dd><dd><a href="#">veryverylongdd</a></dd><dd><a href="#">dd</a></dd><dd><a href="#">dd</a></dd></dl>
+            </div>
+            <div class="l-g1-4">
+                <dl class="s-mrl s-mtl sortsite"><dt><span class="fr s-prl s-plm sortsite_more"><a href="#"><i class="i-chevron-right"></i></a></span>veryveryveryveryverylongdt</dt><dd><a href="#">veryveryveryveryverylongdd</a></dd><dd><a href="#">verylongdd</a></dd><dd><a href="#">veryverylongdd</a></dd><dd><a href="#">dd</a></dd><dd><a href="#">dd</a></dd></dl>
+            </div>
+            <div class="l-g1-4">
+                <dl class="s-mrl s-mtl sortsite"><dt><span class="fr s-prl s-plm sortsite_more"><a href="#"><i class="i-chevron-right"></i></a></span>veryveryveryveryverylongdt</dt><dd><a href="#">veryveryveryveryverylongdd</a></dd><dd><a href="#">verylongdd</a></dd><dd><a href="#">veryverylongdd</a></dd><dd><a href="#">dd</a></dd><dd><a href="#">dd</a></dd></dl>
+            </div>
+            <div class="l-g1-4">
+                <dl class="s-mrl s-mtl sortsite"><dt><span class="fr s-prl s-plm sortsite_more"><a href="#"><i class="i-chevron-right"></i></a></span>veryveryveryveryverylongdt</dt><dd><a href="#">veryveryveryveryverylongdd</a></dd><dd><a href="#">verylongdd</a></dd><dd><a href="#">veryverylongdd</a></dd><dd><a href="#">dd</a></dd><dd><a href="#">dd</a></dd></dl>
+            </div>
+            <div class="l-g1-4">
+                <dl class="s-mrl s-mtl sortsite"><dt><span class="fr s-prl s-plm sortsite_more"><a href="#"><i class="i-chevron-right"></i></a></span>veryveryveryveryverylongdt</dt><dd><a href="#">veryveryveryveryverylongdd</a></dd><dd><a href="#">verylongdd</a></dd><dd><a href="#">veryverylongdd</a></dd><dd><a href="#">dd</a></dd><dd><a href="#">dd</a></dd></dl>
+            </div>
+            <div class="l-g1-4">
+                <dl class="s-mrl s-mtl sortsite"><dt><span class="fr s-prl s-plm sortsite_more"><a href="#"><i class="i-chevron-right"></i></a></span>veryveryveryveryverylongdt</dt><dd><a href="#">veryveryveryveryverylongdd</a></dd><dd><a href="#">verylongdd</a></dd><dd><a href="#">veryverylongdd</a></dd><dd><a href="#">dd</a></dd><dd><a href="#">dd</a></dd></dl>
+            </div>
+            <div class="l-g1-4">
+                <dl class="s-mrl s-mtl sortsite"><dt><span class="fr s-prl s-plm sortsite_more"><a href="#"><i class="i-chevron-right"></i></a></span>veryveryveryveryverylongdt</dt><dd><a href="#">veryveryveryveryverylongdd</a></dd><dd><a href="#">verylongdd</a></dd><dd><a href="#">veryverylongdd</a></dd><dd><a href="#">dd</a></dd><dd><a href="#">dd</a></dd></dl>
+            </div>
+            <div class="l-g1-4">
+                <dl class="s-mrl s-mtl sortsite"><dt><span class="fr s-prl s-plm sortsite_more"><a href="#"><i class="i-chevron-right"></i></a></span>veryveryveryveryverylongdt</dt><dd><a href="#">veryveryveryveryverylongdd</a></dd><dd><a href="#">verylongdd</a></dd><dd><a href="#">veryverylongdd</a></dd><dd><a href="#">dd</a></dd><dd><a href="#">dd</a></dd></dl>
+            </div>
+            <div class="l-g1-4">
+                <dl class="s-mrl s-mtl sortsite"><dt><span class="fr s-prl s-plm sortsite_more"><a href="#"><i class="i-chevron-right"></i></a></span>veryveryveryveryverylongdt</dt><dd><a href="#">veryveryveryveryverylongdd</a></dd><dd><a href="#">verylongdd</a></dd><dd><a href="#">veryverylongdd</a></dd><dd><a href="#">dd</a></dd><dd><a href="#">dd</a></dd></dl>
+            </div>
+            <div class="l-g1-4">
+                <dl class="s-mrl s-mtl sortsite"><dt><span class="fr s-prl s-plm sortsite_more"><a href="#"><i class="i-chevron-right"></i></a></span>veryveryveryveryverylongdt</dt><dd><a href="#">veryveryveryveryverylongdd</a></dd><dd><a href="#">verylongdd</a></dd><dd><a href="#">veryverylongdd</a></dd><dd><a href="#">dd</a></dd><dd><a href="#">dd</a></dd></dl>
+            </div>
+        </div>
+        <div class="l-g1-4"><div class="s-mtl mod-xx">mod-xx</div><div class="s-mtl mod-xx">mod-xx</div><div class="s-mtl mod-xx">mod-xx</div><div class="s-mtl mod-xx">mod-xx</div></div>
+    </div>
+</div>
+
+<div class="l-wrap">
+    <div class="s-mtl footer"><img src="http://placehold.it/120x98&text=footer" alt=""></div>
+</div>
+
+</body>
+<script>
+/*
+
+3 | 9()
+
+960
+
+240
+720/4 
+180 
+
+2 2 2 2 3
+
+3:3:3:4
+---------
+12
+
+3 3 3 3
+
+24
+
+5 5 5 9
+
+36
+
+8 8 8 12
+
+
+....
+156
+
+36 36 36 48
+*/
+
+/*(function() {
+    for(var i = 1; i < 100; i++) {
+        for(var n = 1; n < 100; n++) {
+            if(8*i + 3*i === 12*n) return alert(12*n);    
+        }
+    }
+})();*/
+</script>
+</html>
